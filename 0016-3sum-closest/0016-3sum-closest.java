@@ -14,12 +14,10 @@ class Solution {
                 
                 int sum = nums[i] + nums[left] + nums[right] ;
                 
-                if(sum == target) ans = sum;
-                else if(Math.abs(target-sum) < Math.abs(target-ans)) ans = sum;
-                
-                if( sum <= target ) left++;
+                if( sum < target ) left++;
                 else right--;
-                
+                if(sum == target) ans = sum;
+                else if(Math.abs(sum-target) < Math.abs(ans-target)) ans = sum;
                 
             }
             
