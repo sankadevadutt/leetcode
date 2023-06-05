@@ -15,12 +15,21 @@ class Solution {
                 while( left < right ){
                     
                     long sum = (long) nums[i] + nums[j] + nums[left] + nums[right];
+                    
                     if(sum == target){
-                        List<Integer> temp = Arrays.asList(nums[i],nums[j],nums[left],nums[right]);
+                        
+                        List<Integer> temp = Arrays.asList(nums[i],
+                                                           nums[j],
+                                                           nums[left],nums[right]);
+                        
                         if(!lt.contains(temp)) lt.add(temp);
+                        
                         left++;
+                    
                     }
+                    
                     else if(sum < target) left++;
+                    
                     else right--;
                     
                     
