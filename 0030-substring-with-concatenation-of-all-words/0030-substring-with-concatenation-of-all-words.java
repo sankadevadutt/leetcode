@@ -16,7 +16,7 @@ class Solution {
             
             List<String> cmp = new ArrayList<>();
             
-            for(int j = 0;j<=strlen-size;j+=size) 
+            for(int j = 0 ; j <= strlen - size ; j += size) 
                 cmp.add(substr.substring(j,j+size));
             
             Collections.sort(cmp);
