@@ -10,8 +10,9 @@ class Solution {
             
             String s2 = new String(ch);
             
-            if(mp.containsKey(s2)) mp.get(s2).add(str);
-            else mp.put(s2, new ArrayList<>(Arrays.asList(str)));
+            if(!mp.containsKey(s2)) mp.put(s2, new ArrayList<>());
+            
+            mp.get(s2).add(str);
             
         }
         
