@@ -37,7 +37,6 @@ class Solution {
         }
         if(carry!=0) head.next = new ListNode(carry);
 
-        if(temp.val == 0) return temp.next;
-        return temp;
+        return temp.next;
     }
 }
