@@ -10,6 +10,7 @@ class Solution {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         int row = obstacleGrid.length;
         int column = obstacleGrid[0].length;
+        if(obstacleGrid[row-1][column-1] == 1) return 0;
         int dp[][] = new int[row][column];
         for(int i = 0;i<row;i++){
             for(int j = 0;j<column;j++) dp[i][j] = -1;
