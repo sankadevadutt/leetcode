@@ -6,7 +6,7 @@ class Solution {
             if(lt.contains(i)){
                 ans = Math.max(Math.abs(i), ans);
             }
-            lt.add(i*-1);
+            lt.add(-i);
         }
         return ans;
     }
