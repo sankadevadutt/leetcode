@@ -17,7 +17,7 @@ class Solution {
         for(String st : ret){
             temp.add("()" + st);
             temp.add(st+"()");
-            temp.add('('+st+')');
+            // temp.add('('+st+')');
             int ind = st.indexOf(')');
             while(ind!=-1){
                 temp.add(st.substring(0,ind)+"()"+st.substring(ind));
