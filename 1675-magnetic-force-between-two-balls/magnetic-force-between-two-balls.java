@@ -16,7 +16,6 @@ class Solution {
         int len = position.length;
         int low = 1;
         int high = (int)Math.ceil(position[len-1]/(m-1.0));
-        System.out.println(high);
         int current = 0;
         while(low <= high){
             int mid = low + (high - low)/2 ;
