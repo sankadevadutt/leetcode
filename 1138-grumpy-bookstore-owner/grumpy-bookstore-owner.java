@@ -5,7 +5,7 @@ class Solution {
         int left = 0, right = customers.length;
         int values = Integer.MIN_VALUE;
         int count = 0;
-        int start = -1;
+
         while(left < right){
             isGrumpy = false;
             int k = left;
@@ -19,11 +19,7 @@ class Solution {
                 count++;
                 k++;
             }
-            if(isGrumpy && value > values){
-                values = value;
-                start = left;
-            }
-            if(k == right) break;
+            if(isGrumpy) values = Math.max(value, values);
             count -= grumpy[left] == 1 ?1:0;
             left++;
         }
