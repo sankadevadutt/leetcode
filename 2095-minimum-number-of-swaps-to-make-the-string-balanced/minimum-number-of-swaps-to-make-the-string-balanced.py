@@ -11,4 +11,4 @@ class Solution:
                 else:
                     unbalanced += 1
         
-        return (unbalanced//2 if unbalanced %2 == 0 else (unbalanced+1)//2)
+        return (unbalanced//2 if unbalanced % 2 == 0 else (unbalanced+1)//2)
