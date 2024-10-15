@@ -8,14 +8,11 @@ class Solution:
                 temp.add('('+i+')')
                 temp.add(i+'()')
                 temp.add('()'+i)
-                ind = i.index(')')
+                ind = i.find(')')
                 while ind!= -1:
                     temp.add(i[:ind]+'()'+i[ind:])
-                    try:
-                        ind = i.index(')',ind+1)
-                    except ValueError:
-                        break
-            
+                    ind = i.find(')',ind+1)
+                    
             return list(temp)
 
 
