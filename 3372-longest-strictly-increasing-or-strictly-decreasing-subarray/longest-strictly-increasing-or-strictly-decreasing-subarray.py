@@ -3,7 +3,6 @@ class Solution:
         maX = 1
         n = len(nums)
         start = 0
-
         while(start < n):
             left,right = start,start+1
             while(right < n and nums[left]<nums[right]):
