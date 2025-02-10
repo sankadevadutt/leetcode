@@ -20,7 +20,7 @@ class Solution:
         # Using Stack
         lt = []
         for i in s:
-            if 'a'<=i<='z':
+            if i.isalpha():
                 lt.append(i)
             else:
                 lt.pop()
