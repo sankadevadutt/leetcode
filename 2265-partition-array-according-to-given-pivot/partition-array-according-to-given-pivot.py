@@ -11,6 +11,6 @@ class Solution:
             else:
                 equal.append(i)
         
-        less.extend(equal)
-        less.extend(greater)
-        return less
+        # less.extend(equal)
+        # less.extend(greater)
+        return less+equal+greater
