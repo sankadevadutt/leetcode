@@ -8,10 +8,10 @@ class Solution:
         temp = head
 
         while(temp and temp.next):
-            node = ListNode(self.GCD(temp.val, temp.next.val))
-            node.next = temp.next
+            node = ListNode(self.GCD(temp.val, temp.next.val), temp.next)
             temp.next = node
             temp = node.next
+        
         return head
     
     def GCD(self, v1: int, v2: int) -> int:
