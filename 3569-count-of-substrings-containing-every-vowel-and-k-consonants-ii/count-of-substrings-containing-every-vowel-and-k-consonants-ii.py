@@ -6,16 +6,10 @@ class Solution:
         num_valid_substrings = 0
         start = 0
         end = 0
-        # keep track of counts of vowels and consonants
         vowel_count = {}
         consonant_count = 0
-
-        # start sliding window
         while end < len(word):
-            # insert new letter
             new_letter = word[end]
-
-            # update counts
             if self._isVowel(new_letter):
                 vowel_count[new_letter] = vowel_count.get(new_letter, 0) + 1
             else:
